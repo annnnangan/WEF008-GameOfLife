@@ -409,6 +409,9 @@ function keyPressed(){
         keyboardMode.currentY = (keyboardMode.currentY + 1+ rows)%rows;
       }
     
+        if(key === "ArrowUp" || key === "ArrowRight" || key === "ArrowLeft" ||key === "ArrowDown" ){
+
+      
       currentBoard[keyboardMode.currentX][keyboardMode.currentY] = 1;
       fill("#7E685A"); //if the box has life, then give it a color
       stroke(strokeColor); //stroke color
@@ -417,7 +420,8 @@ function keyPressed(){
         keyboardMode.currentY * unitLength,
         unitLength,
         unitLength
-      );
+      )};
+
 
 
 }
